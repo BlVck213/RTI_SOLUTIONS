@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
         font-family: "Arial";
-        background-image: linear-gradient(rgb(219, 0, 0), rgb(255, 0, 0));
+        background-image: linear-gradient(rgb(131, 26, 26), rgb(255, 0, 0));
     }
     .Background{
         display: flex;
