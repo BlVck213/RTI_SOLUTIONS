@@ -13,8 +13,9 @@
         background-color: white; 
         border-radius: 10px;
         flex-direction: column;
-        width: 500px;
-        height: 300px;
+        width: 580px;
+        height: 380px;
+        border: 3px solid black;
     }
     .text{
         display: flex;
@@ -28,14 +29,16 @@
         padding: 3px;
         margin-left: 15px;
     }
+    em{
+    font-style: normal;
+    }
+    .ECO{
+        color:blue;
+    }
    
 </style>
 
-    <html>
-        <head>
-        <link rel="stylesheet" href="styles.css"/>
-        </head>
-    </html>
+    
 <?php
 
 if(isset($_POST["nome"]) && isset($_POST["endereco"]) 
@@ -53,8 +56,7 @@ if($consumo >= 120){
     $valorConsumo = 0.32;
 }
 
-$valorPagar = $valorConsumo * $consumo;
-
+ $valorPagar = $valorConsumo * $consumo;
 
 }else{
     echo "<h1>Você não enviou as informação corretamente</h1>";
@@ -83,8 +85,14 @@ $valorPagar = $valorConsumo * $consumo;
             <h1 class="<?= $class ?>">Consumo: <?=$consumo?>kWh</h1>
         </div>
         <div class="divs">
-            <h1>Valor à Pagar: R$<?=$valorPagar?></h1>
+            <h1>Valor à Pagar: <em class="<?=$class?>">R$<?=$valorPagar?></em> </h1>
         </div>
+        <div class="divs">
+        <?php if($consumo < 120) { ?>
+            <h1 class="ECO">Obrigado por economizar!!!</h1>
+        <?php } ?>
+        </div>
+
        </div>
    </div>
 </body>
