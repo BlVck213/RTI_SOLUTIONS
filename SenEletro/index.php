@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
         font-family: "Arial";
-        background-image: linear-gradient(rgb(219, 117, 0), orange)
+        background-image: linear-gradient(rgb(219, 0, 0), rgb(255, 0, 0));
     }
     .Background{
         display: flex;
@@ -77,7 +77,7 @@ $valorPagar = $valorConsumo * $consumo;
             <h1>Conta de luz de <?=$nome?></h1>
         </div>
         <div class="divs">
-            <h1><?=$endereco?></h1>
+            <h1>Endereço: <?=$endereco?></h1>
         </div>
         <div class="divs">
             <h1 class="<?= $class ?>">Consumo: <?=$consumo?>kWh</h1>

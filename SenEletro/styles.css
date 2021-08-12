@@ -11,10 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     font-family: Arial, Helvetica, sans-serif;
-
-    background-image: linear-gradient(rgb(219, 117, 0), orange);
+    background-image: linear-gradient(rgb(219, 0, 0), rgb(255, 0, 0));
 }
 
 form{
