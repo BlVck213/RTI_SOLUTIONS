@@ -24,7 +24,7 @@ $valorPagar = ($distancia * 6) + ($pedagios * 9.40);
         align-items: center;
         justify-content: center;
         font-family: "Arial";
-        background-image: linear-gradient(rgb(0, 3, 115), rgb(0, 238, 255));
+        background-image: linear-gradient(rgb(9, 24, 61), rgb(0, 110, 255));
     }
     .resultado{
     font-size: 30px;

@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
         font-family: "Arial";
-        background-image: linear-gradient(rgb(0, 115, 35), rgb(51, 255, 0));
+        background-image: linear-gradient(rgb(31, 94, 29), rgb(81, 255, 0));
     }
 </style>
 <?php
@@ -30,7 +30,7 @@ if(isset($_POST["nome"]) && isset($_POST["salario"])
        echo "<h1>$Ogenero $nome passará a receber R$$aumentoSalarial, no cargo de $cargo</h1>";
     }else{
         $aumentoSalarial = $salario + (($salario / 100) * 20);
-       echo "<h1>$nome passará a receber R$$aumentoSalarial, no cargo de $cargo</h1>";
+       echo "<h1>$Ogenero $nome passará a receber R$$aumentoSalarial, no cargo de $cargo</h1>";
     }
 
 }else{
