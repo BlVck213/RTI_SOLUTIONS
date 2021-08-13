@@ -54,4 +54,13 @@ button{
 button:hover{
     box-shadow: 0px 0px 20px black;
 }
-
+.Radio{
+    width: 14px;
+    height: 14px;
+}
+.RADIO-ROW{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+}
