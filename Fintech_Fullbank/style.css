@@ -11,9 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     font-family: Arial, Helvetica, sans-serif;
-
     background-image: linear-gradient(rgb(31, 94, 29), rgb(81, 255, 0));
 }
 
@@ -54,13 +52,16 @@ button{
 button:hover{
     box-shadow: 0px 0px 20px black;
 }
-.Radio{
-    width: 14px;
-    height: 14px;
-}
+
 .RADIO-ROW{
     display: flex;
     flex-direction: row;
+  align-items: center;
     gap: 5px;
     padding: 5px;
+}
+.RADIO-ROW input{
+    width: 14px;
+    height: 14px;
+    margin:0;
 }

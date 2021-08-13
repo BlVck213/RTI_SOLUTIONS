@@ -28,6 +28,10 @@
         justify-content: center;
         padding: 3px;
         margin-left: 15px;
+        -webkit-user-select: none;  
+        -moz-user-select: none;     
+        -ms-user-select: none;      
+        user-select: none;  
     }
     em{
     font-style: normal;

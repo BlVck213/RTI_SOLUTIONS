@@ -7,6 +7,19 @@
         background-image: linear-gradient(rgb(31, 94, 29), rgb(81, 255, 0));
     }
 </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Fullbank</title>
+</head>
+<body>
+    
+</body>
+</html>
+
 <?php
 
 if(isset($_POST["nome"]) && isset($_POST["salario"]) 
@@ -26,13 +39,14 @@ if(isset($_POST["nome"]) && isset($_POST["salario"])
    }
 
     if($salario > 5000){
-       $aumentoSalarial = $salario + (($salario / 100) * 10);
+       $aumentoSalarial = $salario * 1.1;
        echo "<h1>$Ogenero $nome passará a receber R$$aumentoSalarial, no cargo de $cargo</h1>";
     }else{
-        $aumentoSalarial = $salario + (($salario / 100) * 20);
+        $aumentoSalarial = $salario * 1.2;
        echo "<h1>$Ogenero $nome passará a receber R$$aumentoSalarial, no cargo de $cargo</h1>";
     }
 
+    
 }else{
     echo "<h1>Você não enviou as informação corretamente</h1>";
     exit;
