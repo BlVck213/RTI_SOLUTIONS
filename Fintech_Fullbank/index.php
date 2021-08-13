@@ -38,9 +38,16 @@ if(isset($_POST["nome"]) && isset($_POST["salario"])
         display: flex;
         padding: 20px;
         background-color: white;
-        box-shadow: 0px 0px 20px black;
         border: 2px solid black;
         border-radius: 10px;
+        -webkit-user-select: none;  
+        -moz-user-select: none;     
+        -ms-user-select: none;      
+        user-select: none;  
+    }
+    em{
+        color: rgb(91, 241, 22);
+        font-style: normal;
     }
 </style>
 <!DOCTYPE html>
@@ -53,7 +60,7 @@ if(isset($_POST["nome"]) && isset($_POST["salario"])
 </head>
 <body>
     <div>
-        <h1><?=$Ogenero?> <?=$nome?> passará a receber R$<?=$aumentoSalarial?>, no cargo de <?=$cargo?></h1>
+        <h1><?=$Ogenero?> <?=$nome?> passará a receber R$<em><?=$aumentoSalarial?></em>, no cargo de <em><?=$cargo?></em></h1>
     </div>
 
 </body>
